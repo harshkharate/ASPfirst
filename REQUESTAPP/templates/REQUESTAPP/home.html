@@ -9,6 +9,10 @@
 </head>
 <body>
     <h2>This is the Home Page for submitting access request for AWS Buckets </h2>
+    <form method="POST"> {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Save"/>
+    </form>
 
     <p>Please login with your user credentials to submit the request</p>
 </body>
